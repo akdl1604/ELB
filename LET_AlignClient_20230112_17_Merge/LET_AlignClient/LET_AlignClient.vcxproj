@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{861662DD-2F29-4B02-846B-27C7FE6B643E}</ProjectGuid>
+    <RootNamespace>LET_AlignClient</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\;D:\Util\Halcon\include;D:\Util\Halcon\include\cpp;..\;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\UTIL\opencv2413\lib\Debug;D:\Util\Halcon\lib\x64-win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Util\Halcon\include;D:\Util\Halcon\include\cpp;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\UTIL\opencv2413\lib\Debug;D:\Util\Halcon\lib\x64-win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Util\Halcon\include;D:\Util\Halcon\include\cpp;.\;..\;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\UTIL\opencv2413\lib\Release;D:\Util\Halcon\lib\x64-win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_DAHUHA;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_PRODUCTION_MODEL;_USE_MC_PROTOCOL_;_DATA_BASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4005;4819;4996;4244;4091;4190</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>D:\Util\opencv-2.4.13.6\include;D:\Util\opencv-2.4.13.6\include\opencv2;$(SolutionDir)Include\;UI_Control;D:\Util\ProcLib\include;D:\Util\ProcLib\include\cpp;.\UI_Control;.\UI_Control\ChartCtrl;.\UI_Control\GridCtrl_src;C:\Program Files\Basler\pylon 5\Development\include;C:\Program Files\Teledyne DALSA\Sapera\Include;C:\Program Files\Teledyne DALSA\Sapera\Classes\Basic;C:\Program Files\Teledyne DALSA\Sapera\Classes\Gui;.\SDV_VAT</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm121 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>
+      </LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Util\opencv-2.4.13.6\lib\Debug;$(SolutionDir)Depends\x64\vs2013shared\;D:\Util\ProcLib\lib\x64-win64;D:\Util\opencv2413\x64\vc10\Debug;C:\Program Files\Basler\pylon 5\Development\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthreadVC2.lib;PEGRP64F.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.LIB</IgnoreSpecificDefaultLibraries>
+      <StackReserveSize>8194304</StackReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_DAHUHA;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_PRODUCTION_MODEL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\UTIL\opencv2413\include;D:\util\opencv2413\opencv\build\include;$(SolutionDir)Include\;UI_Control;.\UI_Control;.\UI_Control\ChartCtrl;.\UI_Control\GridCtrl_src</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4819;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\util\opencv2413\opencv\sources\vc2010\lib\Debug;$(SolutionDir)Depends\x64\vs2013shared\;D:\Util\ProcLib\lib\x64-win64;D:\Util\opencv2413\x64\vc10\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MVSDKmd.lib;VideoRender.lib;ImageConvert.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_PRODUCTION_MODEL;_CRT_SECURE_NO_WARNINGS;_USE_MC_PROTOCOL_;_BASLER;_DATA_BASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Util\opencv-2.4.13.6\include;D:\Util\opencv-2.4.13.6\include\opencv2;$(SolutionDir)Include\;UI_Control;D:\Util\ProcLib\include;D:\Util\ProcLib\include\cpp;.\UI_Control;.\UI_Control\ChartCtrl;.\UI_Control\GridCtrl_src;C:\Program Files\Basler\pylon 5\Development\include;C:\Program Files\Teledyne DALSA\Sapera\Include;C:\Program Files\Teledyne DALSA\Sapera\Classes\Basic;C:\Program Files\Teledyne DALSA\Sapera\Classes\Gui</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4819;4996;4244</DisableSpecificWarnings>
+      <AdditionalOptions>-Zm112 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Util\opencv-2.4.13.6\lib\Release;$(SolutionDir)Depends\x64\vs2013shared\;D:\Util\ProcLib\lib\x64-win64;D:\Util\opencv2413\x64\vc10\Release;C:\Program Files\Basler\pylon 5\Development\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthreadVC2.lib;PEGRP64F.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10485760</StackReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\1488905233_kfm_home.png" />
+    <None Include="res\1488905279_personal.png" />
+    <None Include="res\1488905380_Problem.png" />
+    <None Include="res\1488905652_Play.png" />
+    <None Include="res\1488905668_Stop.png" />
+    <None Include="res\1488905817_stop_green.png" />
+    <None Include="res\1488905851_Symbol-Stop.png" />
+    <None Include="res\1488906296_accessories-text-editor.png" />
+    <None Include="res\1488906421_boot.png" />
+    <None Include="res\1488906472_gtk-refresh.png" />
+    <None Include="res\1488906527_Login Manager.png" />
+    <None Include="res\1488906588_button_cancel.png" />
+    <None Include="res\1488906718_speaker-mute_basic_red.png" />
+    <None Include="res\1488954119_conversion_2__.png" />
+    <None Include="res\1488954464_vector_66_13.png" />
+    <None Include="res\1488954660_Sign In.png" />
+    <None Include="res\1488954781_Move.png" />
+    <None Include="res\1488954962_Compasses.png" />
+    <None Include="res\1488955135_Emergency_off.png" />
+    <None Include="res\1488955314_Map-Marker-Push-Pin--Left-Chartreuse.png" />
+    <None Include="res\1488955331_Map-Marker-Push-Pin--Left-Pink.png" />
+    <None Include="res\bottunRed.png" />
+    <None Include="res\button-icon-png-21057.png" />
+    <None Include="res\Button-Next-icon.png" />
+    <None Include="res\buttonGray.png" />
+    <None Include="res\buttonGreen.png" />
+    <None Include="res\buttonPupple.png" />
+    <None Include="res\Center Line.png" />
+    <None Include="res\Letter_M.png" />
+    <None Include="res\Loading.png" />
+    <None Include="res\Model.png" />
+    <None Include="res\OVERLAY.png" />
+    <None Include="res\Ransac.bmp" />
+    <None Include="res\rbtn_dispspeed.png" />
+    <None Include="res\rbtn_main.png" />
+    <None Include="res\rbtn_production.png" />
+    <None Include="res\rbtn_setcycle.png" />
+    <None Include="res\rbtn_setepcs.png" />
+    <None Include="res\rbtn_seteqpid.png" />
+    <None Include="res\rbtn_sethost.png" />
+    <None Include="res\rbtn_setMarco.png" />
+    <None Include="res\rbtn_setMark.png" />
+    <None Include="res\rbtn_setmelsec.png" />
+    <None Include="res\rbtn_srcdispspeed.png" />
+    <None Include="res\rbtn_srcmain.png" />
+    <None Include="res\rbtn_srcproduction.png" />
+    <None Include="res\rbtn_srcsetcycle.png" />
+    <None Include="res\rbtn_srcsetepcs.png" />
+    <None Include="res\rbtn_srcseteqpid.png" />
+    <None Include="res\rbtn_srcsethost.png" />
+    <None Include="res\rbtn_srcsetMarco.png" />
+    <None Include="res\rbtn_srcsetMark.png" />
+    <None Include="res\rbtn_srcsetmelsec.png" />
+    <None Include="res\rbtn_srcwiperchange.png" />
+    <None Include="res\rbtn_wiperchange.png" />
+    <None Include="res\LET_AlignClient.ico" />
+    <None Include="res\LET_AlignClient.rc2" />
+    <None Include="res\Ruler - 복사본.png" />
+    <None Include="res\Ruler.png" />
+    <None Include="res\Setting.png" />
+    <None Include="res\silver-rectangle-button-md.png" />
+    <None Include="res\System.png" />
+    <None Include="res\table_time.png" />
+    <None Include="res\ZOOM_DEFAULT.png" />
+    <None Include="res\ZOOM_FIT.png" />
+    <None Include="res\ZOOM_IN.png" />
+    <None Include="res\ZOOM_OUT.png" />
+    <None Include="UI_Control\ChartCtrl\ChartBalloonLabel.inl" />
+    <None Include="UI_Control\ChartCtrl\ChartLabel.inl" />
+    <None Include="UI_Control\ChartCtrl\ChartPointsArray.inl" />
+    <None Include="UI_Control\ChartCtrl\ChartSerieBase.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlignMeasureInspection.h" />
+    <ClInclude Include="Basler\Camera.h" />
+    <ClInclude Include="Benaphore.h" />
+    <ClInclude Include="Caliper\Caliper.h" />
+    <ClInclude Include="Caliper\DlgCaliper.h" />
+    <ClInclude Include="Caliper\SheetCaliperParam.h" />
+    <ClInclude Include="Caliper\SheetCaliperResult.h" />
+    <ClInclude Include="CamLightControlDlg.h" />
+    <ClInclude Include="CommPLC.h" />
+    <ClInclude Include="CPFScaleCalc.h" />
+    <ClInclude Include="CramerSRuleDlg.h" />
+    <ClInclude Include="CSaperaCamera.h" />
+    <ClInclude Include="DlgAlarm.h" />
+    <ClInclude Include="DlgCreateModel.h" />
+    <ClInclude Include="DlgINISetting.h" />
+    <ClInclude Include="DlgList.h" />
+    <ClInclude Include="DlgManualInputMark.h" />
+    <ClInclude Include="DlgManualInputMark1Cam.h" />
+    <ClInclude Include="DlgMarkCopy.h" />
+    <ClInclude Include="DlgMessage.h" />
+    <ClInclude Include="DlgSelectJob.h" />
+    <ClInclude Include="DlgViewer.h" />
+    <ClInclude Include="FormCameraView.h" />
+    <ClInclude Include="FormMachineView.h" />
+    <ClInclude Include="FormMainView.h" />
+    <ClInclude Include="FormModelView.h" />
+    <ClInclude Include="FormPlcShareMemoryView.h" />
+    <ClInclude Include="FormSystemOptionView.h" />
+    <ClInclude Include="FormTrendView.h" />
+    <ClInclude Include="GridInspectionParamDlg.h" />
+    <ClInclude Include="Hough.h" />
+    <ClInclude Include="ImageProcessingSimulator.h" />
+    <ClInclude Include="ImageProcessing\BetterBlobDetector.h" />
+    <ClInclude Include="ImageProcessing\HalconProcessing.h" />
+    <ClInclude Include="ImageProcessing\MathUtil.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="Job\CJob_1Cam1ShotAlign.h" />
+    <ClInclude Include="KeyPadDlg.h" />
+    <ClInclude Include="LogInDataBaseClass.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="MachineSetting.h" />
+    <ClInclude Include="MarkFindingSheet.h" />
+    <ClInclude Include="MarkMaskingSheet.h" />
+    <ClInclude Include="MarkSearchingSheet.h" />
+    <ClInclude Include="MarkSearchTesterSheet.h" />
+    <ClInclude Include="MaskMarkViewDlg.h" />
+    <ClInclude Include="McPLC_Control.h" />
+    <ClInclude Include="NMPNetworkChange.h" />
+    <ClInclude Include="OffsetDlg.h" />
+    <ClInclude Include="OnscreenKeyboardDlg.h" />
+    <ClInclude Include="PaneAuto.h" />
+    <ClInclude Include="PaneBottom.h" />
+    <ClInclude Include="PaneBottomSimulation.h" />
+    <ClInclude Include="PaneCamera.h" />
+    <ClInclude Include="PaneHeader.h" />
+    <ClInclude Include="PanelExistInspection.h" />
+    <ClInclude Include="PaneMachine.h" />
+    <ClInclude Include="PaneManual.h" />
+    <ClInclude Include="PaneModel.h" />
+    <ClInclude Include="PaneSimulation.h" />
+    <ClInclude Include="PatternMatching.h" />
+    <ClInclude Include="Prealign.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="LET_AlignClient.h" />
+    <ClInclude Include="LET_AlignClientDlg.h" />
+    <ClInclude Include="ScanInspWorker.h" />
+    <ClInclude Include="SimpleSplashWnd.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="SratchInspWorker.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabCameraPage.h" />
+    <ClInclude Include="TabInspPage.h" />
+    <ClInclude Include="TabMachineAlgoPage.h" />
+    <ClInclude Include="TabModelAlgoPage.h" />
+    <ClInclude Include="TabTrendReportPage.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TrendDataBaseClass.h" />
+    <ClInclude Include="UI_Control\ButtonEx.h" />
+    <ClInclude Include="UI_Control\CallbackThread.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartAxis.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartAxisLabel.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartBalloonLabel.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartBarSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCandlestickSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCrossHairCursor.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCtrl.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCursor.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartDateTimeAxis.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartDragLineCursor.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartFont.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartGanttSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartGradient.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartGrid.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLabel.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLegend.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLineSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLogarithmicAxis.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartMouseListener.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartPointsArray.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartPointsSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartScrollBar.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSerieBase.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSeriesMouseListener.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartStandardAxis.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartString.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSurfaceSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartTitle.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\ChartXYSerie.h" />
+    <ClInclude Include="UI_Control\ChartCtrl\PointsOrdering.h" />
+    <ClInclude Include="UI_Control\CustomTabCtrl.h" />
+    <ClInclude Include="UI_Control\Dib.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\CellRange.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\GridCell.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\GridCellBase.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\GridCtrl.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\GridDropTarget.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\InPlaceEdit.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\MemDC.h" />
+    <ClInclude Include="UI_Control\GridCtrl_src\TitleTip.h" />
+    <ClInclude Include="UI_Control\GroupEx.h" />
+    <ClInclude Include="UI_Control\History.h" />
+    <ClInclude Include="UI_Control\LabelEx.h" />
+    <ClInclude Include="UI_Control\MemDCEx.h" />
+    <ClInclude Include="UI_Control\RadioEx.h" />
+    <ClInclude Include="UI_Control\RGBBYTE.h" />
+    <ClInclude Include="UI_Control\ScrollBarEx.h" />
+    <ClInclude Include="UI_Control\ThemeUtil.h" />
+    <ClInclude Include="UI_Control\ViewerEx.h" />
+    <ClInclude Include="UI_Control\XWinThread.h" />
+    <ClInclude Include="UI_Control\XWinThreadUtil.h" />
+    <ClInclude Include="UserDefineHeader.h" />
+    <ClInclude Include="UserDefinePlcAddress.h" />
+    <ClInclude Include="use_opencv.h" />
+    <ClInclude Include="VAT_SimulatorDlg.h" />
+    <ClInclude Include="VirtualKeyBoard\AutomataKR.h" />
+    <ClInclude Include="VirtualKeyBoard\VirtualKeyBoard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlignMeasureInspection.cpp" />
+    <ClCompile Include="An_engineering_calculator.cpp" />
+    <ClCompile Include="Basler\Camera.cpp" />
+    <ClCompile Include="Basler\DahuaCameraHelper.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="Caliper\Caliper.cpp" />
+    <ClCompile Include="Caliper\DlgCaliper.cpp" />
+    <ClCompile Include="Caliper\SheetCaliperParam.cpp" />
+    <ClCompile Include="Caliper\SheetCaliperResult.cpp" />
+    <ClCompile Include="CamLightControlDlg.cpp" />
+    <ClCompile Include="CBSpeedListCtrl.cpp" />
+    <ClCompile Include="CInspChartView.cpp" />
+    <ClCompile Include="CLLightSock.cpp" />
+    <ClCompile Include="CommPLC.cpp" />
+    <ClCompile Include="CommThread.cpp" />
+    <ClCompile Include="ComPLC_RS.cpp" />
+    <ClCompile Include="CPFScaleCalc.cpp" />
+    <ClCompile Include="CramerSRuleDlg.cpp" />
+    <ClCompile Include="CSaperaCamera.cpp" />
+    <ClCompile Include="DlgAlarm.cpp" />
+    <ClCompile Include="DlgCreateModel.cpp" />
+    <ClCompile Include="DlgINISetting.cpp" />
+    <ClCompile Include="DlgList.cpp" />
+    <ClCompile Include="DlgManualInputMark.cpp" />
+    <ClCompile Include="DlgManualInputMark1Cam.cpp" />
+    <ClCompile Include="DlgMarkCopy.cpp" />
+    <ClCompile Include="DlgMessage.cpp" />
+    <ClCompile Include="DlgMsg.cpp" />
+    <ClCompile Include="DlgProfile.cpp" />
+    <ClCompile Include="DlgSearchView.cpp" />
+    <ClCompile Include="DlgSelectJob.cpp" />
+    <ClCompile Include="DlgViewer.cpp" />
+    <ClCompile Include="FilmInspDataBaseClass.cpp" />
+    <ClCompile Include="FormCameraView.cpp" />
+    <ClCompile Include="FormMachineView.cpp" />
+    <ClCompile Include="FormMainView.cpp" />
+    <ClCompile Include="FormModelView.cpp" />
+    <ClCompile Include="FormPlcShareMemoryView.cpp" />
+    <ClCompile Include="FormSystemOptionView.cpp" />
+    <ClCompile Include="FormTrendView.cpp" />
+    <ClCompile Include="GridInspectionParamDlg.cpp" />
+    <ClCompile Include="Hough.cpp" />
+    <ClCompile Include="ImageProcessingSimulator.cpp" />
+    <ClCompile Include="ImageProcessing\BetterBlobDetector.cpp" />
+    <ClCompile Include="ImageProcessing\blob.cpp" />
+    <ClCompile Include="ImageProcessing\BlobContour.cpp" />
+    <ClCompile Include="ImageProcessing\BlobOperators.cpp" />
+    <ClCompile Include="ImageProcessing\BlobResult.cpp" />
+    <ClCompile Include="ImageProcessing\CircleFit.cpp" />
+    <ClCompile Include="ImageProcessing\ComponentLabeling.cpp" />
+    <ClCompile Include="ImageProcessing\EdgesSubPix.cpp" />
+    <ClCompile Include="ImageProcessing\HalconProcessing.cpp" />
+    <ClCompile Include="ImageProcessing\MathUtil.cpp" />
+    <ClCompile Include="ImageProcessing\SGSmooth.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="InspCounter.cpp" />
+    <ClCompile Include="Job\CJob_1Cam1ShotAlign.cpp" />
+    <ClCompile Include="KeyPadDlg.cpp" />
+    <ClCompile Include="LightControl.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="LogInDataBaseClass.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="MachineSetting.cpp" />
+    <ClCompile Include="MarkFindingSheet.cpp" />
+    <ClCompile Include="MarkMaskingSheet.cpp" />
+    <ClCompile Include="MarkSearchingSheet.cpp" />
+    <ClCompile Include="MarkSearchTesterSheet.cpp" />
+    <ClCompile Include="MaskMarkViewDlg.cpp" />
+    <ClCompile Include="McPLC_Control.cpp" />
+    <ClCompile Include="MiniDumper.cpp" />
+    <ClCompile Include="NetworkPerformanceItem.cpp" />
+    <ClCompile Include="NMPNetworkChange.cpp" />
+    <ClCompile Include="OffsetDlg.cpp" />
+    <ClCompile Include="OnscreenKeyboardDlg.cpp" />
+    <ClCompile Include="PaneAuto.cpp" />
+    <ClCompile Include="PaneBottom.cpp" />
+    <ClCompile Include="PaneBottomSimulation.cpp" />
+    <ClCompile Include="PaneCamera.cpp" />
+    <ClCompile Include="PaneHeader.cpp" />
+    <ClCompile Include="PanelExistInspection.cpp" />
+    <ClCompile Include="PaneMachine.cpp" />
+    <ClCompile Include="PaneManual.cpp" />
+    <ClCompile Include="PaneModel.cpp" />
+    <ClCompile Include="PaneSimulation.cpp" />
+    <ClCompile Include="PatternMatching.cpp" />
+    <ClCompile Include="Prealign.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="LET_AlignClient.cpp" />
+    <ClCompile Include="LET_AlignClientDlg.cpp" />
+    <ClCompile Include="SamsungVATWraper.cpp" />
+    <ClCompile Include="ScanInspWorker.cpp" />
+    <ClCompile Include="Sequence.cpp" />
+    <ClCompile Include="SimpleMatchScript.cpp" />
+    <ClCompile Include="SimpleSplashWnd.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="SratchInspWorker.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabCameraPage.cpp" />
+    <ClCompile Include="TabInspPage.cpp" />
+    <ClCompile Include="TabMachineAlgoPage.cpp" />
+    <ClCompile Include="TabModelAlgoPage.cpp" />
+    <ClCompile Include="TabTrendReportPage.cpp" />
+    <ClCompile Include="TrendDataBaseClass.cpp" />
+    <ClCompile Include="UI_Control\BBungGrid.cpp" />
+    <ClCompile Include="UI_Control\ButtonEx.cpp" />
+    <ClCompile Include="UI_Control\CallbackThread.cpp" />
+    <ClCompile Include="UI_Control\CDSliderCtrlDiamond.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartAxis.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartAxisLabel.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartBarSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCtrl.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCursor.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartDragLineCursor.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartFont.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartGanttSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartGradient.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartGrid.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartLegend.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartLineSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartPointsSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartScrollBar.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartStandardAxis.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartTitle.cpp" />
+    <ClCompile Include="UI_Control\ChartCtrl\ChartXYSerie.cpp" />
+    <ClCompile Include="UI_Control\CheckEx.cpp" />
+    <ClCompile Include="UI_Control\CircleProgress.cpp" />
+    <ClCompile Include="UI_Control\CustomTabCtrl.cpp" />
+    <ClCompile Include="UI_Control\DevicesHandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Dib.cpp" />
+    <ClCompile Include="UI_Control\DipBmp.cpp" />
+    <ClCompile Include="UI_Control\EditEx.cpp" />
+    <ClCompile Include="UI_Control\EllipseShape.cpp" />
+    <ClCompile Include="UI_Control\fpng.cpp" />
+    <ClCompile Include="UI_Control\GradientStatic.cpp" />
+    <ClCompile Include="UI_Control\Graphics\FakeDC.cpp" />
+    <ClCompile Include="UI_Control\Graphics\GraphicDisplayControl.cpp" />
+    <ClCompile Include="UI_Control\Graphics\GraphicLabel.cpp" />
+    <ClCompile Include="UI_Control\Graphics\GraphicMaskDrawing.cpp" />
+    <ClCompile Include="UI_Control\Graphics\GraphicRegionalSelection.cpp" />
+    <ClCompile Include="UI_Control\Graphics\ImageViewer.cpp" />
+    <ClCompile Include="UI_Control\Graphics\LincUtils.cpp" />
+    <ClCompile Include="UI_Control\Graphics\MaskBase.cpp" />
+    <ClCompile Include="UI_Control\Graphics\MaskPolygon.cpp" />
+    <ClCompile Include="UI_Control\GridCtrl_src\GridCell.cpp" />
+    <ClCompile Include="UI_Control\GridCtrl_src\GridCellBase.cpp" />
+    <ClCompile Include="UI_Control\GridCtrl_src\GridCtrl.cpp" />
+    <ClCompile Include="UI_Control\GridCtrl_src\GridDropTarget.cpp" />
+    <ClCompile Include="UI_Control\GridCtrl_src\InPlaceEdit.cpp" />
+    <ClCompile Include="UI_Control\GridCtrl_src\TitleTip.cpp" />
+    <ClCompile Include="UI_Control\GroupEx.cpp" />
+    <ClCompile Include="UI_Control\INIReader.cpp" />
+    <ClCompile Include="UI_Control\JXINIFile.cpp" />
+    <ClCompile Include="UI_Control\LabelEx.cpp" />
+    <ClCompile Include="UI_Control\ListCtrlStyled.cpp" />
+    <ClCompile Include="UI_Control\PenShape.cpp" />
+    <ClCompile Include="UI_Control\PolygonShape.cpp" />
+    <ClCompile Include="UI_Control\RadioEx.cpp" />
+    <ClCompile Include="UI_Control\RectangleShape.cpp" />
+    <ClCompile Include="UI_Control\RGBBYTE.cpp" />
+    <ClCompile Include="UI_Control\ScrollBarEx.cpp" />
+    <ClCompile Include="UI_Control\ShapeObject.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\Backup.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\Column.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\Database.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\Exception.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\Savepoint.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\sqlite3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Statement.cpp" />
+    <ClCompile Include="UI_Control\SQLiteCpp\Transaction.cpp" />
+    <ClCompile Include="UI_Control\TabCtrlEx.cpp" />
+    <ClCompile Include="UI_Control\ThemeUtil.cpp" />
+    <ClCompile Include="UI_Control\tinyxml2.cpp" />
+    <ClCompile Include="UI_Control\ViewerEx.cpp" />
+    <ClCompile Include="UI_Control\WinUtils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XComboBox.cpp" />
+    <ClCompile Include="UI_Control\XDateBox.cpp" />
+    <ClCompile Include="UI_Control\XEditBox.cpp" />
+    <ClCompile Include="UI_Control\XHeaderCtrl.cpp" />
+    <ClCompile Include="UI_Control\XListCtrl.cpp" />
+    <ClCompile Include="UI_Control\XSpinBox.cpp" />
+    <ClCompile Include="UI_Control\XWinThread.cpp" />
+    <ClCompile Include="VAT_SimulatorDlg.cpp" />
+    <ClCompile Include="VirtualKeyBoard\AutomataKR.cpp" />
+    <ClCompile Include="VirtualKeyBoard\VirtualKeyBoard.cpp" />
+    <ClCompile Include="ZObject\ZEvent.cpp" />
+    <ClCompile Include="ZObject\ZKernelObject.cpp" />
+    <ClCompile Include="ZObject\ZThreadHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LET_AlignClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\bitmap4.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\controlToolbar.bmp" />
+    <Image Include="res\Loading.bmp" />
+    <Image Include="res\toolbar2.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="LET_AlignClient.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

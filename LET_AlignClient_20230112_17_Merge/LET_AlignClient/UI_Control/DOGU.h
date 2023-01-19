@@ -1,0 +1,14 @@
+#pragma once
+
+enum class DOGU
+{
+	DNONE,
+	DPEN,
+	DLINE,
+	DELLIPSE,
+	DRECT,
+	DROUNDRECT,
+	DERASE,
+	DFILL,
+	D_POLYGON
+};
