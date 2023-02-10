@@ -74,9 +74,7 @@ public:
 
 	virtual bool MouseDown(CPoint pos, const Rigid& trans)
 	{
-		auto rect = GetRect(trans.Transform(m_CenterPoint), m_Size);
-
-		bool ret = false;
+		auto rect = GetRect(trans.Transform(m_CenterPoint), m_Size);		bool ret = false;
 		if ((ret = IsPointInRect(rect, pos)))
 			SetCursor(m_Cursor);
 

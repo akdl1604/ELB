@@ -29626,7 +29626,7 @@ UINT Thread_Ink_45CamInspection(void* pParam)
 
 UINT Thread_Process(void *pParam)
 {
-#ifndef NO_MIL	
+#ifndef NO_MIL
 	STPARAM Param = *(STPARAM*)pParam;
 
 	int nRet = 0;

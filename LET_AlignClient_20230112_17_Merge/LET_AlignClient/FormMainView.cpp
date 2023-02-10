@@ -7289,7 +7289,7 @@ void CFormMainView::draw_align_result_mark_edge(int nCam, int nPos, int nViewer,
 	}
 #pragma endregion
 
-#pragma regioin Fixture 등록 / Roi
+#pragma region Fixture 등록 / Roi
 	BOOL bFixtureUse = m_pMain->vt_job_info[nJob].model_info.getAlignInfo().getUseFixtureMark();
 
 	if (bFixtureUse)
