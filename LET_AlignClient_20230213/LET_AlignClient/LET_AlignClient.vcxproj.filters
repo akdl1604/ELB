@@ -1,0 +1,1318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Chart">
+      <UniqueIdentifier>{699b1b9d-9fd0-4d77-8f4d-1bc1376bf00c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UI">
+      <UniqueIdentifier>{d2d25b1a-25ce-44a6-936a-9825169ecbd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\PANE">
+      <UniqueIdentifier>{71d78d57-9bb4-4200-90d3-7c236fba9239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\FORM">
+      <UniqueIdentifier>{c8326035-c617-490a-9f74-d68abbfcf087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\DLG">
+      <UniqueIdentifier>{7150791c-398b-45cc-b651-a15d48481911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ALGO">
+      <UniqueIdentifier>{f533c0d7-527d-4424-ac57-5c75e63d7217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Hardware">
+      <UniqueIdentifier>{b14c606c-f4ff-4d95-95d8-ee8a2c6909e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Virtual KeyBoard">
+      <UniqueIdentifier>{a26463b3-7649-425e-a73d-a5a1d70c40dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SQLiteCpp">
+      <UniqueIdentifier>{041636b3-1c84-4009-be5b-247e4579e1f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Graphics">
+      <UniqueIdentifier>{be29c69b-d76f-4f36-9854-9272c43bda1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\LET_AlignClient.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\LET_AlignClient.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\table_time.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905233_kfm_home.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905279_personal.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905380_Problem.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\System.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905652_Play.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905668_Stop.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905817_stop_green.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488905851_Symbol-Stop.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488906296_accessories-text-editor.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488906421_boot.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488906472_gtk-refresh.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488906527_Login Manager.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488906588_button_cancel.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488906718_speaker-mute_basic_red.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Model.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488954119_conversion_2__.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488954464_vector_66_13.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488954660_Sign In.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488954781_Move.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488954962_Compasses.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488955135_Emergency_off.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488955314_Map-Marker-Push-Pin--Left-Chartreuse.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\1488955331_Map-Marker-Push-Pin--Left-Pink.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_dispspeed.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_production.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_setcycle.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_setepcs.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_seteqpid.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_sethost.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_setMarco.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_setMark.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_setmelsec.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcdispspeed.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcproduction.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcsetcycle.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcsetepcs.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcseteqpid.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcsethost.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcsetMarco.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcsetMark.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcsetmelsec.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcwiperchange.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_wiperchange.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_main.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rbtn_srcmain.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\buttonGray.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\buttonGreen.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\buttonPupple.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bottunRed.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Button-Next-icon.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\button-icon-png-21057.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\silver-rectangle-button-md.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Loading.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Letter_M.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Setting.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="UI_Control\ChartCtrl\ChartBalloonLabel.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="UI_Control\ChartCtrl\ChartLabel.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="UI_Control\ChartCtrl\ChartPointsArray.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="UI_Control\ChartCtrl\ChartSerieBase.inl">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="res\Ransac.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Center Line.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Ruler.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ZOOM_DEFAULT.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ZOOM_FIT.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ZOOM_IN.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ZOOM_OUT.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Ruler - 복사본.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\OVERLAY.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\rotate.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LET_AlignClient.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LET_AlignClientDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefineHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ButtonEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\CallbackThread.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\LabelEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\MemDCEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ScrollBarEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ViewerEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GroupEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\RadioEx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\XWinThread.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\XWinThreadUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneManual.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormMainView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormCameraView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormMachineView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Basler\Camera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormModelView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneCamera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneModel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneAuto.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneMachine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Prealign.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="use_opencv.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineSetting.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Benaphore.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcessing\HalconProcessing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternMatching.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyPadDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\Dib.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\RGBBYTE.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefinePlcAddress.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneBottom.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMessage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCreateModel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OnscreenKeyboardDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignMeasureInspection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelExistInspection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CramerSRuleDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcessing\BetterBlobDetector.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgManualInputMark.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Hough.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartAxis.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartAxisLabel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartBalloonLabel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartBarSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCandlestickSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCrossHairCursor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartCursor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartDateTimeAxis.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartDragLineCursor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartFont.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartGanttSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartGradient.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartGrid.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLabel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLegend.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLineSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartLogarithmicAxis.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartMouseListener.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartPointsArray.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartPointsSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartScrollBar.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSerieBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSeriesMouseListener.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartStandardAxis.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartString.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartSurfaceSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartTitle.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\ChartXYSerie.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ChartCtrl\PointsOrdering.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\CellRange.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\GridCell.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\GridCellBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\GridCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\GridDropTarget.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\InPlaceEdit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\MemDC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\GridCtrl_src\TitleTip.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgViewer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Caliper\Caliper.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Caliper\DlgCaliper.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Caliper\SheetCaliperParam.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Caliper\SheetCaliperResult.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\CustomTabCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\ThemeUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormPlcShareMemoryView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CommPLC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TabCameraPage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TabInspPage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TabMachineAlgoPage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TabModelAlgoPage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MaskMarkViewDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkFindingSheet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkMaskingSheet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkSearchingSheet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkSearchTesterSheet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgINISetting.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleSplashWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualKeyBoard\AutomataKR.h">
+      <Filter>소스 파일\Virtual KeyBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualKeyBoard\VirtualKeyBoard.h">
+      <Filter>소스 파일\Virtual KeyBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="CSaperaCamera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="McPLC_Control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanInspWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Job\CJob_1Cam1ShotAlign.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GridInspectionParamDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CamLightControlDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneBottomSimulation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneSimulation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormSystemOptionView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FormTrendView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TabTrendReportPage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TrendDataBaseClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkMaskingSheet.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MaskMarkViewDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcessing\MathUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CPFScaleCalc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LogInDataBaseClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlarm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgManualInputMark1Cam.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectJob.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VAT_SimulatorDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SratchInspWorker.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcessingSimulator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMarkCopy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NMPNetworkChange.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Control\History.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartAxis.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartXYSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartAxisLabel.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartBarSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCandlestickSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCrossHairCursor.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCtrl.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartCursor.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartDateTimeAxis.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartDragLineCursor.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartFont.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartGanttSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartGradient.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartGrid.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartLegend.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartLineSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartLogarithmicAxis.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartPointsSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartScrollBar.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartStandardAxis.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartSurfaceSerie.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ChartCtrl\ChartTitle.cpp">
+      <Filter>소스 파일\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\CheckEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CBSpeedListCtrl.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ButtonEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\EditEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\JXINIFile.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\LabelEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ListCtrlStyled.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GridCtrl_src\GridCell.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GridCtrl_src\GridCellBase.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GridCtrl_src\GridCtrl.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GridCtrl_src\GridDropTarget.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GroupEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ScrollBarEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XComboBox.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GridCtrl_src\TitleTip.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ViewerEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XDateBox.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XEditBox.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XHeaderCtrl.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XListCtrl.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XSpinBox.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\XWinThread.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\RGBBYTE.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\RadioEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDumper.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\DipBmp.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Dib.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\CallbackThread.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\GradientStatic.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FormCameraView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="FormMachineView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="FormMainView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="FormModelView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="FormPlcShareMemoryView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneAuto.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneBottom.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneCamera.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneHeader.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelExistInspection.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneMachine.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneManual.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneModel.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="Caliper\SheetCaliperParam.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="Caliper\SheetCaliperResult.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="OnscreenKeyboardDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="LET_AlignClientDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMsg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgProfile.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgViewer.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMessage.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgManualInputMark.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCreateModel.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="Caliper\DlgCaliper.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\BetterBlobDetector.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\blob.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\BlobContour.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\BlobOperators.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\BlobResult.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="Caliper\Caliper.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\HalconProcessing.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\ComponentLabeling.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="Hough.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyPadDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="CramerSRuleDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ThemeUtil.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\CustomTabCtrl.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="InspCounter.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\TabCtrlEx.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CommPLC.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="ComPLC_RS.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignMeasureInspection.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineSetting.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternMatching.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="Prealign.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="TabCameraPage.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="TabInspPage.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="TabMachineAlgoPage.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="CLLightSock.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="LightControl.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="CommThread.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="TabModelAlgoPage.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="MaskMarkViewDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkFindingSheet.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkMaskingSheet.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkSearchingSheet.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkSearchTesterSheet.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\CDSliderCtrlDiamond.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualKeyBoard\AutomataKR.cpp">
+      <Filter>소스 파일\Virtual KeyBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualKeyBoard\VirtualKeyBoard.cpp">
+      <Filter>소스 파일\Virtual KeyBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneBottomSimulation.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneSimulation.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="FormSystemOptionView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\MathUtil.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\CircleFit.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\EdgesSubPix.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSplashWnd.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CSaperaCamera.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgINISetting.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSearchView.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\CircleProgress.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="McPLC_Control.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\SGSmooth.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanInspWorker.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\BBungGrid.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GridInspectionParamDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="Job\CJob_1Cam1ShotAlign.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkPerformanceItem.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CamLightControlDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="FormTrendView.cpp">
+      <Filter>소스 파일\FORM</Filter>
+    </ClCompile>
+    <ClCompile Include="TabTrendReportPage.cpp">
+      <Filter>소스 파일\PANE</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\sqlite3.c">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Backup.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Column.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Database.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Exception.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Savepoint.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Statement.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\SQLiteCpp\Transaction.cpp">
+      <Filter>소스 파일\SQLiteCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="TrendDataBaseClass.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkMaskingSheet.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="MaskMarkViewDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\DevicesHandler.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\WinUtils.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\INIReader.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\EllipseShape.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\PenShape.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\PolygonShape.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\RectangleShape.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\ShapeObject.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="CPFScaleCalc.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="LET_AlignClient.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgList.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="LogInDataBaseClass.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlarm.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgManualInputMark1Cam.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectJob.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\FakeDC.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\GraphicDisplayControl.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\GraphicLabel.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\GraphicMaskDrawing.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\GraphicRegionalSelection.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\ImageViewer.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\LincUtils.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\MaskBase.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\MaskPolygon.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SamsungVATWraper.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="VAT_SimulatorDlg.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="CInspChartView.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="FilmInspDataBaseClass.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\fpng.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SratchInspWorker.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ZObject\ZEvent.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ZObject\ZKernelObject.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ZObject\ZThreadHandler.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMatchScript.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="An_engineering_calculator.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculator.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessingSimulator.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMarkCopy.cpp">
+      <Filter>소스 파일\DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="NMPNetworkChange.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\tinyxml2.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\fastROI\fastBlob.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\fastROI\fastRect.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing\fastROI\matrix.cpp">
+      <Filter>소스 파일\ALGO</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\BaslerCamera.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\CameraObject.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\DahuaCamera.cpp">
+      <Filter>소스 파일\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Control\Graphics\GraphicRotateRectSelection.cpp">
+      <Filter>소스 파일\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LET_AlignClient.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Loading.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\toolbar2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\controlToolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
